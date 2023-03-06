@@ -6,7 +6,7 @@ function VeiwPhoto() {
   const [data, setData] = useState([]);
   useEffect(() => {
     axios
-      .get("http://localhost:5000")
+      .get("https://nightgown-elk.cyclic.app/")
       .then((res) => setData(res.data))
       .catch((err) => console.log(err, "it has an error"));
   });
